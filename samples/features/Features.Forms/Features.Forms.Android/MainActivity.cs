@@ -21,7 +21,7 @@ namespace Features.Forms.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(IoC.Get<FormsApp>());
+            LoadApplication(new FormsApp());
         }
     }
 }

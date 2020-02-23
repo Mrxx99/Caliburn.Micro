@@ -10,7 +10,7 @@ namespace Features.CrossPlatform
     {
         private readonly SimpleContainer container;
 
-        public FormsApp(SimpleContainer container)
+        public FormsApp()
         {
             Initialize();
 
@@ -21,7 +21,7 @@ namespace Features.CrossPlatform
                 return listView?.SelectedItem;
             });
 
-            this.container = container;
+            this.container = new SimpleContainer();
 
             container
                .PerRequest<MenuViewModel>()
